@@ -20,18 +20,19 @@ Este repositório contém o código e os experimentos realizados para o projeto 
 Foram implementadas e comparadas duas abordagens principais:
 
 ### 3.1. Abordagem 1: Baseline Clássico (CRF)
-[source: 4, 5, 6, 7]
+
 * Modelo estatístico **Conditional Random Fields (CRF)**.
 * **Características:** Features linguísticas (ex: Part-of-Speech tags), n-gramas.
 * **Representações Vetoriais:** TF-IDF e/ou embeddings de palavras pré-treinados (Word2Vec, FastText).
 * **Objetivo:** Estabelecer um baseline sólido com menor custo computacional.
 
 ### 3.2. Abordagem 2: Deep Learning Sequencial (BiLSTM-CRF)
-[source: 8, 9, 10, 11, 12]
+
 * Arquitetura de rede neural recorrente **Bidirecional LSTM (BiLSTM)** seguida por uma camada **CRF**.
 * **Objetivo:** Capturar dependências sequenciais de forma mais robusta, sendo uma alternativa viável a Transformers completos em hardware limitado.
 * **Embeddings:** Uso de embeddings pré-treinados estáticos (Word2Vec/FastText) e contextuais (extraídos do BERTimbau [2] sem fine-tuning).
 * **Regularização:** Dropout.
 
 ### (Opcional) 3.3. Abordagem 3: Exploração com Transformers
+
 * Investigação limitada (se realizada) com fine-tuning do BERTimbau ou uso de seus embeddings em camadas de classificação simples.
