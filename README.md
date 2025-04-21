@@ -1,6 +1,7 @@
 # Reconhecimento de Entidades Nomeadas para Textos Jurídicos Brasileiros (LeNER-Br)
 
 Este repositório contém o código e os experimentos realizados para o projeto final da disciplina CPE 783 - Processamento de Linguagem Natural (Período 2025/1) do PEE/COPPE/UFRJ. O foco é o Reconhecimento de Entidades Nomeadas (NER) em documentos jurídicos brasileiros.
+
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.6%2B-green)
 
